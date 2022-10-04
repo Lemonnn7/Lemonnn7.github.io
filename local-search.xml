@@ -4,13 +4,29 @@
   
   
   <entry>
-    <title>建立自己的blog</title>
-    <link href="/%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84blog.html"/>
-    <url>/%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84blog.html</url>
+    <title>python环境配置</title>
+    <link href="/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html"/>
+    <url>/python%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE.html</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h2 id="1-anaconda-下载安装"><a href="#1-anaconda-下载安装" class="headerlink" title="1.anaconda  下载安装"></a>1.anaconda  下载安装</h2><p>正常下载安装，环境变量path配置 conda目录和scripts路径</p><h2 id="2-设置国内镜像"><a href="#2-设置国内镜像" class="headerlink" title="2.设置国内镜像"></a>2.设置国内镜像</h2><p>如果需要安装很多packages，你会发现conda下载的速度经常很慢，因为Anaconda.org的服务器在国外。所幸的是，清华TUNA镜像源有Anaconda仓库的镜像，我们将其加入conda的配置即可：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># 添加Anaconda的TUNA镜像</span><br>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/<br><span class="hljs-comment"># TUNA的help中镜像地址加有引号，需要去掉</span><br> <br><span class="hljs-comment"># 设置搜索时显示通道地址</span><br>conda config --<span class="hljs-built_in">set</span> show_channel_urls yes<br></code></pre></td></tr></table></figure><h2 id="3-安装opencv时候源有问题"><a href="#3-安装opencv时候源有问题" class="headerlink" title="3.安装opencv时候源有问题"></a>3.安装opencv时候源有问题</h2><p>opencv下载：<a href="https://pypi.tuna.tsinghua.edu.cn/simple/opencv-contrib-python/">Links for opencv-contrib-python (tsinghua.edu.cn)</a></p><p>找对应py版本</p><p>user下的condarc文件内容改成如下（加上了win-64）</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs awk">ssl_verify: true<br>show_channel_urls: true<br><br>channels:<br><br>  - http:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>pkgs<span class="hljs-regexp">/free/</span>win-<span class="hljs-number">64</span>/<br>  - http:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>pkgs<span class="hljs-regexp">/main/</span>win-<span class="hljs-number">64</span>/<br></code></pre></td></tr></table></figure><h2 id="4-安装dilib库"><a href="#4-安装dilib库" class="headerlink" title="4.安装dilib库"></a>4.安装dilib库</h2><p><img src="http://img.hexiaobo.xyz/image-20220309230544657.png" alt="安装dlib"></p>]]></content>
     
     
+    <categories>
+      
+      <category>技术经验</category>
+      
+      <category>博客</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Git</tag>
+      
+    </tags>
     
   </entry>
   
